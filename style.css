@@ -1,8 +1,41 @@
 div.bg {
 	background-image: url('bg.jpg');
 	background-size: cover;
+	background-position: 0%;
+}
+
+div.body {
+	margin-left: 350px;
+	margin-right: 200px;
 }
 
 html, body {
 	margin: 0; padding: 0; 
+}
+
+li.links {
+	float: left;
+}
+
+li.links a {
+	display: block;
+	padding: 5px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+}
+
+ul.links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 2px;
+	overflow: hidden;
+	background-color: #333;
+	height: 40px;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	border-radius: 25px;
 }
