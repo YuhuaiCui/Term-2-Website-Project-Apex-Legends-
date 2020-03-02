@@ -17,13 +17,19 @@ div.bg {
 	background-image: url('bg.jpg');
 	background-size: cover;
 	background-position: 0%;
+	height: 600px;
+	position: relative;
+	top: -68px;
 }
 
 div.body {
-	margin-left: 350px;
-	margin-right: 200px;
+	margin-left: 300px;
+	margin-right: 150px;
 	position: absolute;
-	top: 750px;
+	top: 600px;
+	background-color: #E6D3C2;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 div.dropdown:hover div.dropdown-content {
@@ -42,6 +48,8 @@ div.dropdown {
 	display: inline-block;
 	position: sticky;
 	top: 0;
+	z-index: 2;
+	margin-top: -5000px;
 }
 
 div.dropdown-content {
@@ -64,6 +72,8 @@ div.dropdown-content a {
 div.navbar {
 	position: sticky;
 	top: 0;
+	z-index: 1;
+	margin-top: 10px;
 }
 
 html, body {
@@ -79,7 +89,7 @@ li.links a {
 	padding: 5px 10px;
 	color: white;
 	text-decoration: none;
-	font-size: 26px;
+	font-size: 24px;
 	text-align: center;
 }
 
@@ -87,11 +97,12 @@ ul.links {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	padding-top: 5px;
+	padding-top: 8px;
 	overflow: hidden;
-	background-color: black;
+	background-color: #333;
 	height: 50px;
 	text-align: center;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 25px;
+	margin-right: 25px;
+	border-radius: 25px;
 }
