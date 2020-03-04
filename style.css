@@ -1,7 +1,24 @@
+.active {
+	background-color: red;
+}
+
+@font-face {
+	font-family: blocktastic;
+	src: url(blocktastic.otf);
+}
+
+body {
+	background-image: url('bg.jfif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 button.button {
 	border: none;
-	margin-left: 16px;
-	padding: 16px;
+	margin-left: 20px;
+	padding: 12px;
 	background-color: #E11E22;
 }
 
@@ -26,7 +43,7 @@ div.body {
 	margin-left: 300px;
 	margin-right: 150px;
 	position: absolute;
-	top: 600px;
+	top: 592px;
 	background-color: #E6D3C2;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -86,23 +103,30 @@ li.links {
 
 li.links a {
 	display: block;
-	padding: 5px 10px;
+	padding: 12px 10px;
 	color: white;
 	text-decoration: none;
 	font-size: 24px;
 	text-align: center;
 }
 
+li a:hover {
+	background-color: yellow;
+}
+
+li a:hover:not(.active) {
+	background-color: yellow;
+}
+
 ul.links {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	padding-top: 8px;
 	overflow: hidden;
 	background-color: #333;
 	height: 50px;
 	text-align: center;
-	margin-left: 25px;
-	margin-right: 25px;
-	border-radius: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 15px;
 }
