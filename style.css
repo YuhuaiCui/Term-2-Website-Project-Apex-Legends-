@@ -1,5 +1,17 @@
 .active {
-	background-color: red;
+	background-color: #EDA80F;
+}
+
+
+.pc {
+	border: 5px solid #171717;
+}
+
+.pctext {
+	margin-left: -750px;
+	text-align: center;
+	font-family: blocktastic;
+	font-size: 24px;
 }
 
 @font-face {
@@ -8,7 +20,7 @@
 }
 
 body {
-	background-image: url('bg.jfif');
+	background-image: url('bg2.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -19,7 +31,7 @@ button.button {
 	border: none;
 	margin-left: 20px;
 	padding: 12px;
-	background-color: #E11E22;
+	background-color: #EDA80F;
 }
 
 button.button:hover {
@@ -42,11 +54,13 @@ div.bg {
 div.body {
 	margin-left: 300px;
 	margin-right: 150px;
-	position: absolute;
-	top: 592px;
+	margin-top: -150px;
+	padding-top: 50px;
 	background-color: #E6D3C2;
 	padding-left: 50px;
 	padding-right: 50px;
+	z-index: -1;
+	padding-bottom: 25px;
 }
 
 div.dropdown:hover div.dropdown-content {
@@ -64,6 +78,7 @@ div.dropdown-content a:hover {
 div.dropdown {
 	display: inline-block;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 0;
 	z-index: 2;
 	margin-top: -5000px;
@@ -72,8 +87,8 @@ div.dropdown {
 div.dropdown-content {
 	display: none;
 	position: absolute;
-	min-width: 160px;
 	z-index: 1;
+	min-width: 160px;
 	background-color: #F1EDE1;
 }
 
@@ -88,13 +103,39 @@ div.dropdown-content a {
 
 div.navbar {
 	position: sticky;
+	position: -webkit-sticky;
 	top: 0;
 	z-index: 1;
 	margin-top: 10px;
 }
 
+h1 {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.7px;
+}
+
+h2 {
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+	letter-spacing: 0.5px;
+}
+
+h2.gallery {
+	margin-left: 10px;
+	font-family: blocktastic;
+	font-size: 30px;
+}
+
+h2.gameplay, ul.gameplay {
+	margin-left: -20px;
+}
+
 html, body {
 	margin: 0; padding: 0; 
+}
+
+li.gameplay {
+	margin-left: 20px;
 }
 
 li.links {
@@ -103,19 +144,62 @@ li.links {
 
 li.links a {
 	display: block;
-	padding: 12px 10px;
+	padding: 10px 10px;
 	color: white;
 	text-decoration: none;
 	font-size: 24px;
 	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 li a:hover {
-	background-color: yellow;
+	background-color: #EDA80F;
 }
 
 li a:hover:not(.active) {
-	background-color: yellow;
+	background-color: #404040;
+}
+
+img.gallery {
+	border: 5px solid #171717;
+}
+
+p, li {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+table, th, td {
+	border: 1px solid #EDA80F;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 400px;
+}
+
+tr:nth-child(even) {
+	background-color: #DDDDDD;
+}	
+
+tr:nth-child(odd) {
+	background-color: #EEE;
+}
+
+td:hover {
+	background-color: #333;
+	color: white;
+}
+
+th, td {
+	padding: 10px;
+}
+
+th {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 ul.links {
@@ -124,9 +208,9 @@ ul.links {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-	height: 50px;
+	height: 51px;
 	text-align: center;
 	margin-left: 50px;
 	margin-right: 50px;
-	border-radius: 15px;
+	border-radius: 10px;
 }
